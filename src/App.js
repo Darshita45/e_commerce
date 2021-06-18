@@ -79,12 +79,13 @@ const App = () => {
     <Router>
     <CssBaseline />
         <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
-    <div>
+    {/* <div>
       <Header/>
-    </div>
+    </div> */}
       <div>
       <Route exact path="/">
-            <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
+            {/* <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty /> */}
+            <Header/>
           </Route>
           <Route exact path="/cart">
             <Cart cart={cart} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart} onEmptyCart={handleEmptyCart} />
