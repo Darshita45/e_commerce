@@ -1,19 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { Navbar, Products, Cart, Checkout } from '../components';
+import { commerce } from '../lib/commerce';
+
 import { CssBaseline } from '@material-ui/core';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Navbar, Products, Cart, Checkout } from './components';
 
-import { Link, useLocation } from 'react-router-dom';
-import { commerce } from './lib/commerce';
-import Header from './Header/Header';
-import Shop from './Shop/Shop';
-
-const App = () => {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState({});
-  const [order, setOrder] = useState({});
-  const [errorMessage, setErrorMessage] = useState('');
+const Shop = () => {
+    const [mobileOpen, setMobileOpen] = React.useState(false);
+    const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState({});
+    const [order, setOrder] = useState({});
+    const [errorMessage, setErrorMessage] = useState('');
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
@@ -73,17 +70,11 @@ const App = () => {
   }, []);
 
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
-
-  return (
-    <>
-    <Router>
-    <CssBaseline />
-        <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
-    <div>
-      <Header/>
-    </div>
-      <div>
-      <Route exact path="/">
+    return(
+        <>
+        <div style={{ display: 'flex' }}>
+        <Switch>
+          <Route exact path="/">
             <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
           </Route>
           <Route exact path="/cart">
@@ -92,11 +83,10 @@ const App = () => {
           <Route path="/checkout" exact>
             <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
           </Route>
-      <Route exact path="/shop" component={Shop}>Shop Now</Route>
+        </Switch>
       </div>
-    </Router>
-    </>
-  );
-};
+        </>
+    )
+}
 
-export default App;
+export default Shop;
