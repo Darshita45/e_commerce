@@ -79,13 +79,16 @@ const App = () => {
     <Router>
     <CssBaseline />
         <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
+
     {/* <div>
       <Header/>
     </div> */}
       <div>
       <Route exact path="/">
-            {/* <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty /> */}
             <Header/>
+          </Route>
+          <Route exact path="/shop">
+              <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
           </Route>
           <Route exact path="/cart">
             <Cart cart={cart} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart} onEmptyCart={handleEmptyCart} />
@@ -93,7 +96,7 @@ const App = () => {
           <Route path="/checkout" exact>
             <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
           </Route>
-      <Route exact path="/shop" component={Shop}>Shop Now</Route>
+      {/* <Route exact path="/shop" component={Shop}>Shop Now</Route> */}
       </div>
     </Router>
     </>
