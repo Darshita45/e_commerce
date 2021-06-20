@@ -19,19 +19,19 @@ const Navbar = ({totalItems}) => {
         <>
             <AppBar position="fixed" className={classes.appBar} color="inherit">
                 <Toolbar>
-                    <Typography component={Link} to="/website address here" variant="h6" className={classes.title} color="inherit">
+                    <Typography component={Link} to="/" variant="h6" className={classes.title} color="inherit">
                         <img src={logo} alt="Commerce.js" height="65px" className={classes.image}/>
                         Ramesh Brothers
                     </Typography>
                     <div className={classes.grow}/>
-                    {/*<div>
-                        <IconButton component={Link} to="/home" color="inherit">
+                    <div>
+                        <IconButton component={Link} to="/" color="inherit">
                             <Badge color="secondary">
                                 <HomeIcon/>
                             </Badge>
                         </IconButton>
                     </div>
-                    <div>
+                   {/* <div>
                         <IconButton component={Link} to="/contact" color="inherit">
                             <Badge color="secondary">
                                 <MessageIcon/>
@@ -59,7 +59,7 @@ const Navbar = ({totalItems}) => {
                             </Badge>
                         </IconButton>
                     </div>
-                    {location.pathname === '/' && (
+                    {/*{location.pathname === '/' && (*/}
                     <div className={classes.button}>
                         <IconButton component={Link} to="/cart" aria-label="Show cart items" color="inherit">
                             <Badge badgeContent={totalItems} color="secondary">
@@ -67,7 +67,7 @@ const Navbar = ({totalItems}) => {
                             </Badge>
                         </IconButton>
                     </div>
-                    )}
+                    {/*)}*/}
                 </Toolbar>
             </AppBar>
         </>

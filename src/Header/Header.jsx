@@ -1,6 +1,7 @@
 import React from 'react';
 import useStyles from './styles.css';
 
+//import Footer from '../Footer/Footer';
 
 const Header = () => {
     return(
@@ -32,6 +33,7 @@ const Header = () => {
       <p>Motion</p>
     </div>
   </div>
+  {/* <Footer/> */}
         </>
     ) 
 };
