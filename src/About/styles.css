@@ -79,5 +79,6 @@
   margin: 10px;
 }
 .container .card:hover .box .content a {
-  background: rgb(252, 46, 80);
+  
+  opacity: 0.8;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles.scss';
 import About from '../About/About';
-
-//import Footer from '../Footer/Footer';
+import Gallery from '../Gallery.jsx/Gallery';
+import Footer from '../Footer/Footer';
 
 const Header = () => {
   return (
@@ -14,8 +14,8 @@ const Header = () => {
         </div>
 
         <div className="hero-content">
-          <h1>Places</h1>
-          <h2>Mountain</h2>
+          <h1>Our shop</h1>
+          <h2>Ramesh Brothers</h2>
           <p>” THE REAL VOYAGE OF DISCOVERY CONSISTS NOT IN SEEKING NEW LANDSCAPES, BUT IN HAVING NEW EYES.” ~ MARCEL PROUST</p>
           <ul className="social-media">
             <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
@@ -26,7 +26,8 @@ const Header = () => {
 
       </div>
       <About/>
-      {/* <Footer/> */}
+      <Gallery/>
+      <Footer/>
     </>
   )
 };
