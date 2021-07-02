@@ -4,6 +4,7 @@ import About from '../About/About';
 import Gallery from '../Gallery.jsx/Gallery';
 import Footer from '../Footer/Footer';
 
+
 const Header = () => {
   return (
     <>
@@ -23,11 +24,12 @@ const Header = () => {
             <li><a href="#"><i className="fab fa-twitter"></i></a></li>
           </ul>
         </div>
+        
 
       </div>
-      <About/>
-      <Gallery/>
-      <Footer/>
+      <About />
+      <Gallery />
+      <Footer />
     </>
   )
 };

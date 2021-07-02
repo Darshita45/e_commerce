@@ -7,6 +7,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { commerce } from './lib/commerce';
 import Header from './Header/Header';
 import Shop from './Shop/Shop';
+import Whatsapp from './components/Whatsapp/Whatsapp'
 
 const App = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -76,19 +77,23 @@ const App = () => {
 
   return (
     <>
-    <Router>
-    <CssBaseline />
+
+      
+      <Router>
+
+        <CssBaseline />
         <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
 
-    {/* <div>
+        {/* <div>
       <Header/>
     </div> */}
-      <div>
-      <Route exact path="/">
-            <Header/>
+
+        <div>
+          <Route exact path="/">
+            <Header />
           </Route>
           <Route exact path="/shop">
-              <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
+            <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
           </Route>
           <Route exact path="/cart">
             <Cart cart={cart} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart} onEmptyCart={handleEmptyCart} />
@@ -96,9 +101,13 @@ const App = () => {
           <Route path="/checkout" exact>
             <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
           </Route>
-      {/* <Route exact path="/shop" component={Shop}>Shop Now</Route> */}
+          {/* <Route exact path="/shop" component={Shop}>Shop Now</Route> */}
+        </div>
+      </Router>
+      <div>
+        <Whatsapp></Whatsapp>
       </div>
-    </Router>
+
     </>
   );
 };
