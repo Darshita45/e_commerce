@@ -124,6 +124,10 @@ h3 {
 }
 
 @media all and (max-width:900px) {
+  section {
+    margin-top: 70px;
+    height: 100%;
+  }
   .services-grid {
     display: -webkit-box;
     display: flex;
