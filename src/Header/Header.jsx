@@ -1,9 +1,10 @@
 import React from 'react';
 import './styles.scss';
+import Services from '../Services/Services';
 import About from '../About/About';
-import Gallery from '../Gallery.jsx/Gallery';
+import Gallery from '../Gallery/Gallery';
 import Footer from '../Footer/Footer';
-
+import Team from '../Team/Team'
 
 const Header = () => {
   return (
@@ -27,8 +28,10 @@ const Header = () => {
         
 
       </div>
-      <About />
+      <Services/>
+      <About/>
       <Gallery />
+      <Team/>
       <Footer />
     </>
   )

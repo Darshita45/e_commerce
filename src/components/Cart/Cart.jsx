@@ -5,13 +5,17 @@ import { Link } from 'react-router-dom';
 import CartItem from './CartItem/CartItem';
 import useStyles from './styles';
 
+import logo from './cartempty.svg';
+
 const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
   const classes = useStyles();
 
   const handleEmptyCart = () => onEmptyCart();
 
   const renderEmptyCart = () => (
-    <Typography variant="subtitle1">You have no items in your shopping cart,
+    <Typography variant="subtitle1">
+      <img src={logo} style={{width: "120px", height: "120px"}}/><br></br>
+      You have no items in your shopping cart,
       <Link className={classes.link} to="/shop">start adding some</Link>!
     </Typography>
   );
