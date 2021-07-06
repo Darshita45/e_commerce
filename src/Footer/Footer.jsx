@@ -44,67 +44,42 @@ const Footer = () => {
         // </footer>
         //     </>
         <>
-
-            <div className="footer">
-                <div className="contain">
-                    <div className="col">
-                        <h1>Company</h1>
-                        <ul>
-                            <li>About</li>
-                            <li>Mission</li>
-                            <li>Services</li>
-                            <li>Social</li>
-                            <li>Get in touch</li>
-                        </ul>
+            <footer>
+                <div class="content">
+                    <div class="left box">
+                        <div class="upper">
+                            <div class="topic">About us</div>
+                            <p>CodingLab is a channel where you can learn HTML,
+                                CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+                        </div>
+                        <div class="lower">
+                            <div class="topic">Contact us</div>
+                            <div class="phone">
+                                <a href="https://wa.me/919099672704"><i class="fas fa-phone-volume"></i>+91 9099672704</a>
+                            </div>
+                            <div class="email">
+                                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsvKcrnNbmDtxXpChwxrPqMsrMhpMwmtdLWpdHNNnqbclMbfXlGpLjMgDDSvpcqZxptVB"><i class="fas fa-envelope"></i>kaushik_430@yahoo.com</a>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col">
-                        <h1 className="h11">Products</h1>
-                        <ul className="u11">
-                            <li>About</li>
-                            <li>Mission</li>
-                            <li>Services</li>
-                            <li>Social</li>
-                            <li>Get in touch</li>
-                        </ul>
+                    <div class="middle box">
+                        <div class="topic">Our Services</div>
+                        <div><a href="#">Web Design, Development</a></div>
+                        <div><a href="#">Web UX Design, Reasearch</a></div>
+                        <div><a href="#">Web User Interface Design</a></div>
+                        <div><a href="#">Theme Development, Design</a></div>
+                        <div><a href="#">Mobile Application Design</a></div>
+                        <div><a href="#">Wire raming & Prototyping</a></div>
                     </div>
-                    <div class="col">
-                        <h1>Accounts</h1>
-                        <ul>
-                            <li>About</li>
-                            <li>Mission</li>
-                            <li>Services</li>
-                            <li>Social</li>
-                            <li>Get in touch</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h1 className="h22">Resources</h1>
-                        <ul className="u22">
-                            <li>Webmail</li>
-                            <li>Redeem code</li>
-                            <li>WHOIS lookup</li>
-                            <li>Site map</li>
-                            <li>Web templates</li>
-                            <li>Email templates</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h1>Support</h1>
-                        <ul>
-                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsvKcrnNbmDtxXpChwxrPqMsrMhpMwmtdLWpdHNNnqbclMbfXlGpLjMgDDSvpcqZxptVB"><li>Contact us</li></a>
-                            <a href="https://wa.me/919099672704"><li>Web chat</li></a>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h1>Support</h1>
-                        <a href="https://maps.app.goo.gl/siYAXWiJ9TJnfn91A">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0564600467847!2d73.06360621496779!3d23.02169908495345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e6d757926c471%3A0xe3232aeabc8239c8!2sRamesh%20Brothers!5e0!3m2!1sen!2sin!4v1625589891932!5m2!1sen!2sin" style={{ width: "600", height: "450", border: 0, allowfullscreen: "", loading: "lazy" }}></iframe>
-                            {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29377.489843752923!2d73.05765097310908!3d23.016933431604734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e6d58936de175%3A0xb72304f8191d7c71!2sKapadvanj%2C%20Gujarat%20387620!5e0!3m2!1sen!2sin!4v1624594716063!5m2!1sen!2sin" style={{width:"350", height:"250", border:0, allowfullscreen:"", loading:"lazy"}}></iframe> */}
-                        </a>
+                    <div class="right box">
+                        <div class="topic">Find us</div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0564600467847!2d73.06360621496779!3d23.02169908495345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e6d757926c471%3A0xe3232aeabc8239c8!2sRamesh%20Brothers!5e0!3m2!1sen!2sin!4v1625589891932!5m2!1sen!2sin" style={{ width: "600", height: "450", border: 0, allowfullscreen: "", loading: "lazy" }}></iframe>
                     </div>
                 </div>
-            </div>
-
+                <div class="bottom">
+                    <p>Copyright © 2020 <a href="#">CodingLab</a> All rights reserved</p>
+                </div>
+            </footer>
         </>
     )
 };
