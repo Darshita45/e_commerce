@@ -215,7 +215,8 @@ html,body {
   width: 100%;
   position: relative;
   height: auto;
-  background-color: #070617;
+  color: #070617;
+  
 }
 .footer .col {
   width: 190px;

@@ -44,6 +44,7 @@ const Footer = () => {
         // </footer>
         //     </>
         <>
+
             <div className="footer">
                 <div className="contain">
                     <div className="col">
@@ -57,8 +58,8 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="col">
-                        <h1 className = "h11">Products</h1>
-                        <ul className = "u11">
+                        <h1 className="h11">Products</h1>
+                        <ul className="u11">
                             <li>About</li>
                             <li>Mission</li>
                             <li>Services</li>
