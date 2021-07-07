@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
-
+import {Link} from 'react-router-dom';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 export class Gallery extends React.Component {
     componentDidMount() {
@@ -62,6 +63,7 @@ css.innerHTML += "}\n";
 css.innerHTML += "#slidy { left: 0%; "+keyframeprefix+"transform: translate3d(0,0,0); "+keyframeprefix+"animation: "+totalTime+"s slidy infinite; }\n"; // call on the completed keyframe animation sequence
 document.body.appendChild(css); // add the new stylesheet to the end of the document
 }
+<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 
     }
     render() {
@@ -74,6 +76,14 @@ document.body.appendChild(css); // add the new stylesheet to the end of the docu
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie-2.jpg" alt="lucie-2" />
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie" />
             </figure>
+            </div>
+            <div class="container">
+              <button>
+                <box-icon name='right-arrow-alt'></box-icon>  
+                <div class="name">Shop more</div>
+                <div class="circle"></div>
+                <div class="circle-white"></div>
+              </button>
             </div>
             </>
         )
