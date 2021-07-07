@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles.css';
 import {Link} from 'react-router-dom';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 export class Gallery extends React.Component {
     componentDidMount() {
@@ -80,7 +79,7 @@ document.body.appendChild(css); // add the new stylesheet to the end of the docu
             <div class="container">
               <button>
                 <box-icon name='right-arrow-alt'></box-icon>  
-                <div class="name">Shop more</div>
+                <div class="name" style={{color: "black"}}><Link to="/shop">Shop more</Link></div>
                 <div class="circle"></div>
                 <div class="circle-white"></div>
               </button>
