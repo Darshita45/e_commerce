@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography} from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core';
 
 import { Navbar, Products, Cart, Checkout } from '../components';
 import { commerce } from '../lib/commerce';
-import {ShoppingCart} from '@material-ui/icons';
+import { ShoppingCart } from '@material-ui/icons';
 import ShopIcon from '@material-ui/icons/Shop';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -13,13 +13,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 const Shop = (totalItems) => {
-    const classes = useStyles();
-    const location = useLocation();
-    const [mobileOpen, setMobileOpen] = React.useState(false);
-    const [products, setProducts] = useState([]);
-    const [cart, setCart] = useState({});
-    const [order, setOrder] = useState({});
-    const [errorMessage, setErrorMessage] = useState('');
+  const classes = useStyles();
+  const location = useLocation();
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState({});
+  const [order, setOrder] = useState({});
+  const [errorMessage, setErrorMessage] = useState('');
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
@@ -79,35 +79,35 @@ const Shop = (totalItems) => {
   }, []);
 
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
-    return(
-        <>
-        <div style={{ display: 'flex' }}>
-        
-    <Router>
-    <CssBaseline />
-    <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
-    <div>
-                        <IconButton component={Link} to="/home" color="inherit">
-                            <Badge color="secondary">
-                                <ShoppingCart/>
-                            </Badge>
-                        </IconButton>
-                    </div>
-        <Switch>
-          <Route exact path="/">
-            <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
-          </Route>
-          <Route exact path="/cart">
-            <Cart cart={cart} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart} onEmptyCart={handleEmptyCart} />
-          </Route>
-          <Route path="/checkout" exact>
-            <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
-          </Route>
-        </Switch>
+  return (
+    <>
+      <div style={{ display: 'flex' }}>
+
+        <Router>
+          <CssBaseline />
+          <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
+          <div>
+            <IconButton component={Link} to="/home" color="inherit">
+              <Badge color="secondary">
+                <ShoppingCart />
+              </Badge>
+            </IconButton>
+          </div>
+          <Switch>
+            <Route exact path="/">
+              <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
+            </Route>
+            <Route exact path="/cart">
+              <Cart cart={cart} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart} onEmptyCart={handleEmptyCart} />
+            </Route>
+            <Route path="/checkout" exact>
+              <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
+            </Route>
+          </Switch>
         </Router>
       </div>
-        </>
-    )
+    </>
+  )
 }
 
 export default Shop;
