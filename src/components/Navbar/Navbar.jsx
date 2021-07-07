@@ -5,6 +5,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 import GroupIcon from '@material-ui/icons/Group';
 import MessageIcon from '@material-ui/icons/Message';
+import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 import ShopIcon from '@material-ui/icons/Shop';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -64,6 +65,13 @@ const Navbar = ({totalItems}) => {
                         <IconButton component={Link} to="/cart" aria-label="Show cart items" color="inherit">
                             <Badge badgeContent={totalItems} color="secondary">
                                 <ShoppingCart/>
+                            </Badge>
+                        </IconButton>
+                    </div>
+                    <div className={classes.button}>
+                        <IconButton component={Link} to="/contact" color="inherit">
+                            <Badge color="secondary">
+                                <PermContactCalendarIcon/>
                             </Badge>
                         </IconButton>
                     </div>
