@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
-import { Dropdown, Selection } from 'react-dropdown-now';
+// import { Dropdown, Selection } from 'react-dropdown-now';
 import Product from './Product/Product';
 import useStyles from './styles';
 import { render } from '@testing-library/react';
