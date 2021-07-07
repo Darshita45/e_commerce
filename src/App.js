@@ -102,7 +102,7 @@ const App = () => {
           <Route path="/checkout" exact>
             <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
           </Route>
-          <Route exact path="/shop">
+          <Route exact path="/contact">
             <ContactUs/>
           </Route>
           {/* <Route exact path="/shop" component={Shop}>Shop Now</Route> */}
