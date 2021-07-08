@@ -1,0 +1,41 @@
+
+.npbase {
+  margin-top: 27px;
+  width: 450px;
+  height: auto;
+  background-color: #d3d3d3;
+  padding: 20px;
+}
+.nptitulo {font-family: Anton;
+color: #191919;
+font-size: 39px;
+text-align: center;
+border-bottom: 2px solid #000;}
+.npsubtitulo {
+  font-family: Cormorant Garamond;
+  font-size: 16px;
+  padding-top: 5px;
+}
+.npcontenido {
+  text-align: justify;
+  font-family: Calibri;
+  font-size: 16px;
+  padding: 10px;
+  line-height: 20px;
+  color: #1c1c1c;
+}
+.npcredito {
+  font-family: Poiret One;
+  text-align: right;
+  font-size: 13px;
+  color: #333333;
+}
+img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+a:link 
+{ 
+text-decoration:none;
+color: #333333;
+}

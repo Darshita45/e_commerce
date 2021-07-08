@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css';
+import CallIcon from '@material-ui/icons/Call';
 //import useStyles from './styles.css';
 
 const Footer = () => {
@@ -49,20 +50,19 @@ const Footer = () => {
                     <div class="left box">
                         <div class="upper">
                             <div class="topic">About us</div>
-                            <p>CodingLab is a channel where you can learn HTML,
-                                CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+                            <p>From 1979 till now Ramesh Brothers has served top quality products and has earned love and trust of its consumers.</p>
                         </div>
                         <div class="lower">
                             <div class="topic">Contact us</div>
                             <div class="phone">
-                                <a href="https://wa.me/919099672704"><i class="fas fa-phone-volume"></i>+91 9099672704</a>
+                                <a href="https://wa.me/919099672704">+91 9879692986</a>
                             </div>
                             <div class="email">
-                                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsvKcrnNbmDtxXpChwxrPqMsrMhpMwmtdLWpdHNNnqbclMbfXlGpLjMgDDSvpcqZxptVB"><i class="fas fa-envelope"></i>kaushik_430@yahoo.com</a>
+                                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsvKcrnNbmDtxXpChwxrPqMsrMhpMwmtdLWpdHNNnqbclMbfXlGpLjMgDDSvpcqZxptVB"><span style={{color: "#fff", textTransform: "lowercase"}}>kaushik_430@yahoo.com</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="middle box">
+                    {/* <div class="middle box">
                         <div class="topic">Our Services</div>
                         <div><a href="#">Web Design, Development</a></div>
                         <div><a href="#">Web UX Design, Reasearch</a></div>
@@ -70,14 +70,14 @@ const Footer = () => {
                         <div><a href="#">Theme Development, Design</a></div>
                         <div><a href="#">Mobile Application Design</a></div>
                         <div><a href="#">Wire raming & Prototyping</a></div>
-                    </div>
+                    </div> */}
                     <div class="right box">
                         <div class="topic">Find us</div>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0564600467847!2d73.06360621496779!3d23.02169908495345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e6d757926c471%3A0xe3232aeabc8239c8!2sRamesh%20Brothers!5e0!3m2!1sen!2sin!4v1625589891932!5m2!1sen!2sin" style={{ width: "600", height: "450", border: 0, allowfullscreen: "", loading: "lazy" }}></iframe>
                     </div>
                 </div>
                 <div class="bottom">
-                    <p>Copyright © 2020 <a href="#">CodingLab</a> All rights reserved</p>
+                    <p>Copyright © 2021 <a href="#">Ramesh Brothers</a> All rights reserved</p>
                 </div>
             </footer>
         </>
