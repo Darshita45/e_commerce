@@ -55,7 +55,7 @@ const Footer = () => {
                         <div class="lower">
                             <div class="topic">Contact us</div>
                             <div class="phone">
-                                <a href="https://wa.me/919099672704">+91 9879692986</a>
+                                <a href="https://wa.me/919099672704">+91 9099672704</a>
                             </div>
                             <div class="email">
                                 <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsvKcrnNbmDtxXpChwxrPqMsrMhpMwmtdLWpdHNNnqbclMbfXlGpLjMgDDSvpcqZxptVB"><span style={{color: "#fff", textTransform: "lowercase"}}>kaushik_430@yahoo.com</span></a>

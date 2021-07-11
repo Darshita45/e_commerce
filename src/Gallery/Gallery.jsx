@@ -2,6 +2,10 @@ import React from 'react';
 import './styles.css';
 import {Link} from 'react-router-dom';
 
+import img1 from './img1.jpg';
+import img2 from './img2.jpg';
+import img3 from './img3.jpg';
+
 export class Gallery extends React.Component {
     componentDidMount() {
             	/* user defined variables */
@@ -70,20 +74,22 @@ document.body.appendChild(css); // add the new stylesheet to the end of the docu
             <>
             <div id="slidy-container">
             <figure id="slidy">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/eyes.jpg" alt="eyes" />
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lou.jpg" alt="lou" />
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie-2.jpg" alt="lucie-2" />
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie" />
+                <img src={img1} alt="Wagh bakri tea" />
+                <img src={img2} alt="Sammrat sev" />
+                <img src={img3} alt="Ramdev chilli powder" />
+                <img src="https://5.imimg.com/data5/QK/CC/GL/SELLER-92229127/orange-khakhara-500x500.jpg" alt="Maniarr khakhra" />
             </figure>
             </div>
-            <div class="container">
+            {/* <div class="container">
               <button>
                 <box-icon name='right-arrow-alt'></box-icon>  
-                <div class="name" style={{color: "black"}}><Link to="/shop">Shop more</Link></div>
+                <div id="name" class="name" style={{textColor: "black"}}><Link to="/shop">Shop more</Link></div>
                 <div class="circle"></div>
                 <div class="circle-white"></div>
               </button>
-            </div>
+            </div> */}
+            <Link className="cta-btn" to="/shop">Shop More!</Link>
+
             </>
         )
     }

@@ -20,7 +20,7 @@ export default function ContactUs() {
   return (
     <>
     <div className="heading">
-      <p>Cancel Your Order Here</p>
+      <h3 style={{marginTop: "110px", textAlign: "center", textDecoration: "underline"}}>Cancel Your Order Here</h3>
     </div>
     <form onSubmit={sendEmail}>
       <ul className="form-style-1">

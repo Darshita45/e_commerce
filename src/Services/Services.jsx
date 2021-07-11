@@ -10,7 +10,7 @@ const Services = () => {
     <>
      <section>
   <h3>Our Services</h3>
-  <p class="section-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p class="section-lead">We provide Best quality products and shipping services in the town.</p>
   <div class="services-grid">
     <div class="service service1">
       <NavigationIcon style={{height: "50px"}}/>
