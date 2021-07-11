@@ -19,6 +19,7 @@ const Team = () => {
                         <div className="darken"></div>
                        
                     </div>
+                    
                     <div className="cube p2">
                         <div className="name">
                             <h1>Jessica</h1>
