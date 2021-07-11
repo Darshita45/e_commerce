@@ -72,14 +72,13 @@ const Products = ({ products, onAddToCart }) => {
                 <Product product={product} onAddToCart={onAddToCart} />
               </Grid>)
             } else {
-              console.log(product.name+" "+search+" "+product.name.includes(search))
+              console.log(product.name + " " + search + " " + product.name.includes(search))
               if (product.name.toUpperCase().includes(search.toUpperCase())) {
                 return (<Grid key={product.id} xs={12} sm={6} md={4} lg={3}>
                   <Product product={product} onAddToCart={onAddToCart} />
                 </Grid>)
               }
             }
-
         })}
       </Grid>
     </main>

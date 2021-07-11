@@ -10,29 +10,28 @@ const Product = ({ product, onAddToCart }) => {
     //     console.log(x)
     // }
     // console.log("Price " + product.price.raw)
-    
-        return (
-            <Card className={classes.root}>
-                <CardMedia className={classes.media} image={product.media.source} title={product.name} />
-                <CardContent>
-                    <div className={classes.cardContent}>
-                        <Typography variant="h5" gutterBottom>
-                            {product.name}
-                        </Typography>
-                        <Typography variant="h5" gutterBottom>
-                            {product.price.formatted_with_symbol}
-                        </Typography>
-                    </div>
-                    <Typography dangerousSetInnerHTML={{ __html: product.description }} variant="body2" color="textSecondary" />
-                </CardContent>
-                <CardActions disableSpacing className={classes.cardActions}>
-                    <IconButton aria-label="Add to Cart" onClick={() => onAddToCart(product.id, 1)}>
-                        <AddShoppingCart />
-                    </IconButton>
-                </CardActions>
-            </Card>
-        )
-            
+
+    return (
+        <Card className={classes.root}>
+            <CardMedia className={classes.media} image={product.media.source} title={product.name} />
+            <CardContent>
+                <div className={classes.cardContent}>
+                    <Typography variant="h5" gutterBottom>
+                        {product.name}
+                    </Typography>
+                    <Typography variant="h5" gutterBottom>
+                        {product.price.formatted_with_symbol}
+                            <IconButton className = {classes.icon} aria-label="Add to Cart" onClick={() => onAddToCart(product.id, 1)}>
+                                <AddShoppingCart />
+                            </IconButton>
+                    </Typography>
+                </div>
+                <Typography dangerousSetInnerHTML={{ __html: product.description }} variant="body2" color="textSecondary" />
+            </CardContent>
+
+        </Card>
+    )
+
 
 }
 
