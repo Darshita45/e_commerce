@@ -1,0 +1,8 @@
+.rb {
+   color: red;
+}
+@media all and (max-width: 767px) {
+   .rb{
+      display: none;
+   }
+}
