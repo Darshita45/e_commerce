@@ -1,6 +1,6 @@
 
 .npbase {
-  margin-top: 27px;
+  /* margin-top: 27px; */
   width: 450px;
   height: auto;
   background-color: #d3d3d3;
@@ -39,3 +39,10 @@ a:link
 text-decoration:none;
 color: #333333;
 }
+
+@media (max-width:900px) {
+  .npbase{
+    width: calc(100% - 128px);
+    max-width: 420px;
+  }
+}  

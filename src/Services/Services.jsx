@@ -21,7 +21,7 @@ const Services = () => {
     <div class="service service3">
       <VerifiedUserIcon style={{height: "50px"}}/>
       <h4>Certified</h4>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+      <p>Dealing with only Certified products so that consumers get get their best.</p>
     </div>
 
     <div class="service service2">

@@ -61,7 +61,10 @@ const AddressForm = ({ checkoutToken, test }) => {
             <FormInput required name="city" label="City" />
             <FormInput required name="zip" label="Zip / Postal code" />
             <FormInput required name="number" label="Number" />
-            <Grid item xs={12} sm={6}>
+            <FormInput required name="country" label="Shipping Country" />            
+            <FormInput required name="state" label="Shipping State" />
+
+            {/* <Grid item xs={12} sm={6}>
               <InputLabel>Shipping Country</InputLabel>
               <Select value={shippingCountry} fullWidth onChange={(e) => setShippingCountry(e.target.value)}>
                 {Object.entries(shippingCountries).map(([code, name]) => ({ id: code, label: name })).map((item) => (
@@ -80,8 +83,8 @@ const AddressForm = ({ checkoutToken, test }) => {
                   </MenuItem>
                 ))}
               </Select>
-            </Grid>
-            <Grid item xs={12} sm={6}>
+            </Grid> */}
+            {/* <Grid item xs={12} sm={6}>
               <InputLabel>Shipping Options</InputLabel>
               <Select value={shippingOption} fullWidth onChange={(e) => setShippingOption(e.target.value)}>
                 {shippingOptions.map((sO) => ({ id: sO.id, label: `${sO.description} - (${sO.price.formatted_with_symbol})` })).map((item) => (
@@ -90,7 +93,7 @@ const AddressForm = ({ checkoutToken, test }) => {
                   </MenuItem>
                 ))}
               </Select>
-            </Grid>
+            </Grid> */}
           </Grid>
           <br />
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>

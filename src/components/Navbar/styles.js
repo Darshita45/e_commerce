@@ -2,9 +2,6 @@ import { makeStyles, fade } from '@material-ui/core/styles';
 
 const drawerWidth = 0;
 
-
-
-
 export default makeStyles((theme) => ({
   appBar: {
     boxShadow: 'none',
@@ -21,7 +18,7 @@ export default makeStyles((theme) => ({
     textDecoration: 'none',
   },
   image: {
-    marginRight: '10px',
+    marginRight: '-1px',
   },
   menuButton: {
     marginRight: theme.spacing(2),
