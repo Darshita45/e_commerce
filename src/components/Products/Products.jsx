@@ -73,25 +73,26 @@ const Products = ({ products, onAddToCart }) => {
         <option value="" name="education" selected>
           All Brand
         </option>
-        <option name="education" value={"Wagh Bakri"}>{"Wagh Bakri"}</option>
-        <option name="education" value={"Bisleri"}>{"Bisleri"}</option>
-        <option name="education" value={"Charbhuja"}>{"Charbhuja"}</option>
-        <option name="education" value={"Cintu"}>{"Cintu"}</option>
-        <option name="education" value={"Eagle"}>{"Eagle"}</option>
-        <option name="education" value={"Fevi kwik"}>{"Fevi kwik"}</option>
+        <option name="education" value={"Wagh Bakri"}>{"Gujarat Tea Processors & Packers LTD"}</option>
+        <option name="education" value={"Ramdev"}>{"Ramdev Food Products Private Limited"}</option>
+        <option name="education" value={"Samrat"}>{"Samrat Namkeen Private LImited"}</option>
+        <option name="education" value={"Marico"}>{"Marico"}</option>
+        <option name="education" value={"Eagle"}>{"M.P Food Products"}</option>
+        <option name="education" value={"Maniarr's"}>{"HSM Foods International Private Limited"}</option>
+        <option name="education" value={"Yogi"}>{"Yogi Foods"}</option>
+        <option name="education" value={"Masum"}>{"Verona Products Private Limited"}</option>
+        <option name="education" value={"Dwarkesh"}>{"Dwarkesh Products"}</option>
+        <option name="education" value={"Oshon"}>{"Dolphin Foods India Limited"}</option>
+        <option name="education" value={"Tiger Khichiya"}>{"Freshc Food World Private Limited"}</option>
+        <option name="education" value={"Bisleri"}>{"Bisleri International Private Limited"}</option>
+        <option name="education" value={"Fevi kwik"}>{"Pidilite Industrial Limited"}</option>
+        <option name="education" value={"Cintu"}>{"Prayagh Nutri Products Private Limited"}</option>
+        <option name="education" value={"Charbhuja"}>{"Charbhuja Foods Industries"}</option>
+        <option name="education" value={"Zayco"}>{"Roble Agro Food Private Limited"}</option>
+
         <option name="education" value={"Genius"}>{"Genius"}</option>
-        <option name="education" value={"Maniarrs"}>{"Maniarrs"}</option>
-        <option name="education" value={"Masum"}>{"Masum"}</option>
-        <option name="education" value={"Oshon"}>{"Oshon"}</option>
         <option name="education" value={"Vicks"}>{"Vicks"}</option>
-        <option name="education" value={"Ramdev"}>{"Ramdev"}</option>
         <option name="education" value={"Mahadev"}>{"Mahadev"}</option>
-        <option name="education" value={"Samrat"}>{"Samrat"}</option>
-        <option name="education" value={"Nihar"}>{"Nihar"}</option>
-        <option name="education" value={"Parachute"}>{"Parachute"}</option>
-        <option name="education" value={"Tiger Khichiya"}>{"Tiger Khichiya"}</option>
-        <option name="education" value={"Yogi"}>{"Yogi"}</option>
-        <option name="education" value={"Zayco"}>{"Zayco"}</option>
       </select>
 
       <Grid container justify="center" spacing={4}>
