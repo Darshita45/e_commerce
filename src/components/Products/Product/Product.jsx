@@ -16,9 +16,9 @@ const Product = ({ product, onAddToCart }) => {
             <CardMedia className={classes.media} image={product.media.source} title={product.name} />
             <CardContent>
                 <div className={classes.cardContent}>
-                    {/* <Typography variant="h5" gutterBottom>
+                    <Typography variant="h5" gutterBottom>
                         {product.name}
-                    </Typography> */}
+                    </Typography>
                     <Typography variant="h6" gutterBottom>
                         {product.price.formatted_with_symbol}
                             <IconButton className = {classes.icon} aria-label="Add to Cart" onClick={() => onAddToCart(product.id, 1)}>

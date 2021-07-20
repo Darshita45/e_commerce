@@ -77,7 +77,7 @@ const Products = ({ products, onAddToCart }) => {
         <option name="education" value={"Ramdev"}>{"Ramdev Food Products Private Limited"}</option>
         <option name="education" value={"Samrat"}>{"Samrat Namkeen Private LImited"}</option>
         <option name="education" value={"Marico"}>{"Marico"}</option>
-        <option name="education" value={"Eagle"}>{"M.P Food Products"}</option>
+        {/* <option name="education" value={"Eagle"}>{"M.P Food Products"}</option>
         <option name="education" value={"Maniarr's"}>{"HSM Foods International Private Limited"}</option>
         <option name="education" value={"Yogi"}>{"Yogi Foods"}</option>
         <option name="education" value={"Masum"}>{"Verona Products Private Limited"}</option>
@@ -92,7 +92,7 @@ const Products = ({ products, onAddToCart }) => {
 
         <option name="education" value={"Genius"}>{"Genius"}</option>
         <option name="education" value={"Vicks"}>{"Vicks"}</option>
-        <option name="education" value={"Mahadev"}>{"Mahadev"}</option>
+        <option name="education" value={"Mahadev"}>{"Mahadev"}</option> */}
       </select>
 
       <Grid container justify="center" spacing={4}>

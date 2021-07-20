@@ -3,7 +3,7 @@ import { CssBaseline } from '@material-ui/core';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Navbar, Products, Cart, Checkout } from './components';
 import ContactUs from './Contact/ContactUs';
-
+import Commerce from '@chec/commerce.js'
 import { Link, useLocation } from 'react-router-dom';
 import { commerce } from './lib/commerce';
 import Header from './Header/Header';
@@ -17,9 +17,13 @@ const App = () => {
   const [order, setOrder] = useState({});
   const [errorMessage, setErrorMessage] = useState('');
 
+  const co = new Commerce('pk_286536d6b0868a8cb04ce8feeed6acebc09bd534592da');
+
   const fetchProducts = async () => {
-    const { data } = await commerce.products.list({limit:200});
-    
+    var { data } = await commerce.products.list({limit:250});
+    co.products.retrieve('prod_r2LM5QGdWawZV1').then((product) => {
+      data = { ...data, product }
+    });
     setProducts(data);
   };
 

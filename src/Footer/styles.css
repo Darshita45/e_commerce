@@ -97,9 +97,6 @@ body {
   transition: opacity 0.3s linear;
 }
 
-.btn:hover {
-  opacity: 0.7;
-}
 
 .copy {
   text-align: center;
@@ -252,13 +249,6 @@ body {
 .social ul li {
   display: inline-block;
   padding-right: 5px !important;
-}
-
-.footer .col ul li:hover {
-  color: #ffffff;
-  transition: .1s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
 }
 .clearfix {
   clear: both;

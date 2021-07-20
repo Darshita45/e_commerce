@@ -20,5 +20,8 @@ export default makeStyles(() => ({
     },
     icon: {
         float:"right"
+    },
+    AddShoppingCart: {
+        
     }
 }));

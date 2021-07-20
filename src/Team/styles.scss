@@ -51,7 +51,7 @@ body {
 	a {
 		color: #444;
 		text-decoration: none;
-		padding: 10px 25px;
+		padding: 10px 20px;
 		border-radius: 5px;
 		transition: 0.2s ease;
 		svg {
@@ -62,17 +62,19 @@ body {
 		}
 	}
 }
-.p1 {background: url('https://static.pexels.com/photos/324658/pexels-photo-324658.jpeg') center;}
-.p2 {background: url('https://static.pexels.com/photos/193355/pexels-photo-193355.jpeg') center;}
-.p3 {background: url('https://static.pexels.com/photos/220453/pexels-photo-220453.jpeg') center;}
-.p4 {background: url('https://static.pexels.com/photos/91227/pexels-photo-91227.jpeg') center;}
-.p5 {background: url('https://static.pexels.com/photos/354951/pexels-photo-354951.jpeg') center;}
-.p6 {background: url('https://static.pexels.com/photos/193355/pexels-photo-193355.jpeg') center;}
+.p1 {background: url('1.jpg') center;}
+.p2 {background: url('2.jpg') center;}
+.p3 {background: url('3.jpg') center;}
+.p4 {background: url('4.jpg') center;}
+.p5 {background: url('5.jpg') center;}
+.p6 {background: url('6.jpg') center;}
+.p7 {background: url('7.jpg') center;}
+
 .cube {
 	height: 200px;
-	width: 200px;
+	width: 153px;
 	background-size: cover;
-	border: 5px solid #fff;
+	// border: 5px solid #fff;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.3), 0 2px 3px rgba(0,0,0,0.1);
 	display: flex;
 	align-items: center;

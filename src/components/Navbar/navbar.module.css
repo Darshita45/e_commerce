@@ -1,5 +1,5 @@
 .rb {
-   color: red;
+   color: black;
 }
 @media all and (max-width: 767px) {
    .rb{

@@ -15,6 +15,7 @@ export default makeStyles((theme) => ({
     },
   },
   checkoutButton: {
+    fontColor: 'white',
     minWidth: '150px',
   },
   link: {
@@ -24,6 +25,7 @@ export default makeStyles((theme) => ({
   cardDetails: {
     display: 'flex',
     marginTop: '10%',
+    marginBottom: '50px',
     width: '100%',
     justifyContent: 'space-between',
   },
