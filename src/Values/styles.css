@@ -116,6 +116,9 @@
     clear: both;
   }
   @media screen and (max-width: 1160px) {
+    info-circle .outer-circle {
+      display: none;
+    }
     .info-circle .info-blocks {
       top: 48px;
       width: calc(100% - 128px);
