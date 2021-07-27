@@ -3,6 +3,7 @@ import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } fro
 import { AddShoppingCart } from '@material-ui/icons';
 
 import useStyles from './styles';
+import cla from './style.module.css'
 
 const Product = ({ product, onAddToCart }) => {
     const classes = useStyles();
@@ -22,8 +23,7 @@ const Product = ({ product, onAddToCart }) => {
                     <Typography variant="h6" gutterBottom>
                         {product.price.formatted_with_symbol}
                             <IconButton className = {classes.icon} aria-label="Add to Cart" onClick={() => onAddToCart(product.id, 1)}>
-                                <AddShoppingCart style={{marginLeft: "160px"}}/>
-                            </IconButton>
+                            <button className={cla.button} onClick={() => onAddToCart(product.id, 1)}><span>Add to cart </span></button>                            </IconButton>
                     </Typography>
                 </div>
                 <Typography dangerousSetInnerHTML={{ __html: product.description }} variant="body2" color="textSecondary" />
